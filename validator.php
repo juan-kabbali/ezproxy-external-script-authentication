@@ -38,9 +38,7 @@ $is_valid_user = "-FAIL\n";
 // Validate credentials
 foreach ($users_array_content["users"] as $credential){
     if($credential['user'] == $user && $credential['user'] == $pass) {
-        if (isset($_POST['valid'])) {
-            $is_valid_user = $_POST['valid'];
-        }
+        $is_valid_user = "+VALID";
     }
 }
 
